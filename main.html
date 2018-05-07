@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>0.0</title>
+	<style type="text/css">
+		body{
+			padding-top: 20px;
+			background: url('./src/beijing.jpg');
+		}
+		.allbg{
+			width: 800px;
+			height: 600px;
+			margin: 0px auto;
+			border: 3px deepskyblue solid;
+
+		}
+
+		#allcanvas{
+			position: relative;
+			width: 800px;
+			height: 600px;
+			margin: 0px;
+
+		}
+
+		#can1{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+		#can2{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
+		}
+
+		.rule{
+			display: none;
+			width: 200px;
+			height: 300px;
+			position: fixed;
+			top: 60px;
+			left: 99px;
+			border: 3px yellow solid;
+			background-color: green;
+			
+		}
+
+		.rulebut
+		{
+			border: 2px yellow solid;
+			font-size: 30px;
+			position: fixed;
+			top: 20px;
+			left: 10px;
+			border-radius: 25px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="allbg">
+		<div id="allcanvas">
+			<canvas id="can1" width="800" height="600"></canvas>
+			<canvas id="can2" width="800" height="600"></canvas>
+		</div>
+    <button class="rulebut">规则</button>
+	<div class="rule">
+		<p>
+		<h2>游戏规则如下：</h2>
+			大鱼吃到果实后，需要回头喂食自己的宝宝，宝宝承受的饥饿度有限，一旦身体
+			变白后，游戏就会结束。
+			提示：蓝色果实 分数高
+			<br><br><br><br><br>
+			<h3>双击屏幕隐藏、</h3>
+         
+		</p>
+	</div>
+ <script type="text/javascript" src="js/commonFunctions.js"></script>
+ <script type="text/javascript" src="js/main.js"></script>
+ <script type="text/javascript" src="js/background.js"></script>
+ <script type="text/javascript" src="js/plant.js"></script>
+ <script type="text/javascript" src="js/fruit.js"></script>
+ <script type="text/javascript" src="js/bigfish.js"></script>
+ <script type="text/javascript" src="js/eat.js"></script>
+ <script type="text/javascript" src="js/smallfish.js"></script>
+ <script type="text/javascript" src="js/data.js"></script>
+ <script type="text/javascript" src="js/wave.js"></script>
+ <script type="text/javascript" src="js/halo.js"></script>
+ <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+ <script type="text/javascript" src="js/jquery.js"></script>
+</body>
+</html>
